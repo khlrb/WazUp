@@ -5,8 +5,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<style type="text/css" >
 			.BIG {
-				text-align: center;
+			    text-align: center;
 				font-size: 150px;
+				height: 100%;
+				min-height: 100%;
+				overflow: hidden;
+				background-color: lightgrey;
+				position: absolute;
+				right: 0;
+				left: 0;
+				top: 0;
+			}
+			.center p {
+				margin: 0;
+				position: relative;
+				top: 100%;
+				left: 50%;
 			}
 		</style>
 		<title>
@@ -14,10 +28,14 @@
 		</title>
 	</head>
 	<main>
-		<div class="BIG" id="01">
-			<form>
-				<input type="button" name="klick" value="Ist alles gut?">
-			</form>
+		<div class="BIG">
+			<p>
+				<div id="01">
+					<form>
+							<input type="button" name="klick" value="Ist alles gut?">
+					</form>
+				</div>
+			</p>
 		</div>
 		<script type="text/javascript">
 			var btn = document.querySelector('input');
