@@ -31,15 +31,22 @@
 			}
 
 		</style>
+		<script>
+			function ist_alles_gut() {
+				document.getElementById('big').innerHTML = 'Ja, alles ist gut!';
+				document.getElementById('rainbow').style.background = 'linear-gradient(to right, pink, red, orange, yellow, green, turquoise, indigo, violet)';
+			}
+		</script>
 		<title>
 			Waz up?
 		</title>
 	</head>
-	<main>
+	<main id="rainbow">
 		<div class="container">
 			<div id="big">
-				<button onclick="document.getElementById('big').innerHTML = 'Ja, alles ist gut!'">Ist alles gut?</button>
+				<button onclick="ist_alles_gut();">Ist alles gut?</button>
 			</div>
 		</div>
 	</main>
-</html>	
+</html>
+
