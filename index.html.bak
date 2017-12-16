@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style type="text/css" >
+			.BIG {
+			    text-align: center;
+				font-size: 150px;
+				height: 100%;
+				min-height: 100%;
+				overflow: hidden;
+				background-color: lightgrey;
+				position: absolute;
+				right: 0;
+				left: 0;
+				top: 0;
+			}
+			.center p {
+				font-size: 50vmin;
+				margin: 0;
+				position: relative;
+				top: 100%;
+				left: 50%;
+			}
+		</style>
+		<title>
+			Waz up?
+		</title>
+	</head>
+	<main>
+		<div class="BIG">
+			<p>
+				<div id="01">
+					<form>
+							<input type="button" name="klick" value="Ist alles gut?">
+					</form>
+				</div>
+			</p>
+		</div>
+		<script type="text/javascript">
+			var btn = document.querySelector('input');
+			var txt = document.getElementById('01');
+
+			btn.addEventListener('click', updateBtn);
+
+			function updateBtn() {
+				document.getElementById('01').innerHTML = "Ja, alles ist gut!";	
+			}
+			
+		</script>
+	</main>
+</html>	
